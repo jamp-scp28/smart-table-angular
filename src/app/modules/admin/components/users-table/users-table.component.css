@@ -1,0 +1,56 @@
+.usersTableContainer{
+    padding-top: 10%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.tableWrapper{
+    height: 100%;
+    width: 90%;
+}
+
+.openUserForm{
+    position: absolute;
+    background-color: var(--brand-color);
+    color: #2d2d2d;
+    font-weight: 500;
+    border-radius: 10px;
+    border-color: wheat;
+    width: 10%;
+    height: 2rem;
+    font-size: 1rem;
+    right: 10%;
+    top: 30%;
+}
+
+.tableHeader{
+    color: var(--text-black);
+    width: 100%;
+    height: 8em;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgba(239, 239, 240, 0.9);
+    display: flex;
+    justify-content: center;
+}
+.tableTitle{
+    margin-top: 20%;
+    text-align: center;
+    font-weight: bold;
+    margin: 2em;
+}
+
+.mat-dialog-container{
+    background-color: red;
+}
+
+:host /deep/ ng2-st-tbody-edit-delete a.ng2-smart-action.ng2-smart-action-edit-edit { display: inline-block; text-align: center; padding: 1px; background-color: lightgreen; border-radius: 10px; color: #2d2d2d; font-weight:500; width:calc(40%); } 
+:host /deep/ ng2-st-tbody-edit-delete a.ng2-smart-action.ng2-smart-action-delete-delete { display: inline-block; text-align: center; padding: 1px; background-color: var(--brand-color); border-radius: 10px; color: #2d2d2d;font-weight: 500; width:calc(40%); } 
+
+:host /deep/ ng2-st-tbody-create-cancel a.ng2-smart-action.ng2-smart-action-edit-save { text-align: center; padding: 1px; background-color: lightgreen; border-radius: 10px; color: #2d2d2d; font-weight: 500; width:calc(50%); } 
+:host /deep/ ng2-st-tbody-create-cancel a.ng2-smart-action.ng2-smart-action-edit-cancel { text-align: center; padding: 1px; background-color: var(--brand-color); border-radius: 10px; color: #2d2d2d; font-weight: 500; width:calc(50%); } 
+
+:host /deep/ input { background-color: #2d2d2d; margin: 400px; color: #2d2d2d; border-radius: 10px;} 

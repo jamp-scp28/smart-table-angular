@@ -1,0 +1,29 @@
+import { adminInterfaces } from "../interfaces/admin.interfaces"
+
+export function db(data: adminInterfaces.User[]){
+    let users: adminInterfaces.User[] = [
+        {
+            "id": 1,
+            "name": "Leanne Graham",
+            "username": "Bret",
+            "email": "Sincere@april.biz",
+            "startDate": "2022-08-08"
+          },
+        {
+            "id": 2,
+            "name": "Ervin Howell",
+            "username": "Antonette",
+            "email": "Shanna@melissa.tv",
+            "startDate": "2022-08-22"
+        },
+        {
+            "id": 3,
+            "name": "Nicholas DuBuque",
+            "username": "Nicholas.Stanton",
+            "email": "Rey.Padberg@rosamond.biz",
+            "startDate": "2022-09-10 "
+        }
+    ]
+    users = data;
+    return users;
+}

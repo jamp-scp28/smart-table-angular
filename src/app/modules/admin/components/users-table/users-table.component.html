@@ -1,0 +1,22 @@
+<div class="usersTableContainer">
+    <div class="tableWrapper">
+        <section class="tableHeader">
+            <h2 class="tableTitle">Users Management</h2>
+            <button (click)="openUserForm()" class="openUserForm">Add User</button>
+        </section>
+        <mat-card>
+            <mat-card-content>
+                <ng2-smart-table class="usersTable" 
+                    [settings]="settings" 
+                    [source]="this.usersData"
+                    (editConfirm)="this.editUser($event)"
+                    (deleteConfirm)="this.deleteUser($event)"
+                >
+                </ng2-smart-table>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>
+
+<ng-template #yesNoDialogTemplate>
+</ng-template>

@@ -1,0 +1,39 @@
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: var(--brand-footer); 
+    margin-top: 5rem;
+}
+
+.copyright {
+    color: #fff;
+    padding: 2rem;
+}
+
+.social {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-left: 5rem;
+    align-items: flex-start;
+    justify-content: start;
+}
+.social h5 {
+    font-size: medium;
+    font-weight: bold;
+    color: white;
+}
+
+.social p {
+    color: white;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+    --primary-colors: #fff;
+    --background-colors: #e5e5e5;
+    --text-color: grey;
+    --text-black: #2d2d2d;
+    --brand-color: #ffc60b;
+    --brand-nav: rgba(239,239,240,0.9);
+    --brand-footer: #425453;
+  }
+  
+.ng2-smart-action-delete-delete,
+.ng2-smart-action-edit-edit,
+.ng2-smart-action-custom-custom {
+    padding-top: 0.8em;
+}
+
+.ng2-smart-action.ng2-smart-action-custom-custom:hover {
+    color: #1e6bb8;
+}
+
+.mat-dialog-container{
+  border-radius: 10px;
+  display: flex;
+}
+
+.mat-dialog-content{
+  height: 100%;
+  width: 100%;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control input{
+  color: #2d2d2d;
+}
