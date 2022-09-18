@@ -4,7 +4,7 @@ import { HttpClient } from "@angular/common/http";
 
 @Injectable()
 export class usersDataService{
-    private usersURL = 'http://localhost:8080/api/v1/users';
+    private usersURL = 'https://project-cavipetrol-api--8080.local.webcontainer.io/api/v1/users';
     constructor(private http: HttpClient){
     }
 
