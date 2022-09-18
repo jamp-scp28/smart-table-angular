@@ -26,6 +26,10 @@
     top: 30%;
 }
 
+.openUserForm:hover{
+    cursor: pointer;
+}
+
 .tableHeader{
     color: var(--text-black);
     width: 100%;
@@ -53,4 +57,4 @@
 :host /deep/ ng2-st-tbody-create-cancel a.ng2-smart-action.ng2-smart-action-edit-save { text-align: center; padding: 1px; background-color: lightgreen; border-radius: 10px; color: #2d2d2d; font-weight: 500; width:calc(50%); } 
 :host /deep/ ng2-st-tbody-create-cancel a.ng2-smart-action.ng2-smart-action-edit-cancel { text-align: center; padding: 1px; background-color: var(--brand-color); border-radius: 10px; color: #2d2d2d; font-weight: 500; width:calc(50%); } 
 
-:host /deep/ input { background-color: #2d2d2d; margin: 400px; color: #2d2d2d; border-radius: 10px;} 
+:host /deep/ input { background-color: var(--brand-color); margin: 400px; color: #2d2d2d; border-radius: 10px;} 

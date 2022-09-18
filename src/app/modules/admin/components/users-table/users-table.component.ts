@@ -2,7 +2,6 @@ import { DialogComponent } from './../dialog/dialog.component';
 import { usersDataService } from './../../services/data.service';
 import { Component, OnInit, TemplateRef, ViewChild} from '@angular/core';
 import { Ng2SmartTableModule, LocalDataSource } from 'ng2-smart-table';
-import { HttpClient } from "@angular/common/http";
 import { MatDialog } from '@angular/material/dialog';
 import { adminInterfaces } from '../../interfaces/admin.interfaces';
 

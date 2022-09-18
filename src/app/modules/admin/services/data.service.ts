@@ -1,6 +1,4 @@
-import { catchError, Observable } from "rxjs";
 import { Injectable } from "@angular/core";
-import { Subject } from "rxjs";
 import { adminInterfaces } from "../interfaces/admin.interfaces";
 import { HttpClient } from "@angular/common/http";
 
@@ -8,7 +6,6 @@ import { HttpClient } from "@angular/common/http";
 export class usersDataService{
     private usersURL = 'http://localhost:8080/api/v1/users';
     constructor(private http: HttpClient){
-
     }
 
     getUsers(){

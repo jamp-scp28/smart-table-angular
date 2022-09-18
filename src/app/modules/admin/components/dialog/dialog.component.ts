@@ -4,7 +4,6 @@ import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { FormGroup, FormControl, Validators } from "@angular/forms";
 import { adminInterfaces } from '../../interfaces/admin.interfaces';
 import * as moment from 'moment';
-import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dialog',
