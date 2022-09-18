@@ -24,10 +24,12 @@ export class UsersTableComponent implements OnInit {
       data: <adminInterfaces.DialogConfig>{
         title: 'Add a New User',
         dialogContent: this.usersForm,
-        acceptButtonTitle: 'Delete it!',
-        declineButtonTitle: 'No stop!'
+        acceptButtonTitle: 'ok!',
+        declineButtonTitle: 'cancel!'
       }
-    }).afterClosed().subscribe(()=>this.refreshData());
+    }).afterClosed().subscribe(()=>{
+     this.refreshDatasave() 
+    })
   }
 
   ngOnInit(): void {
@@ -35,10 +37,21 @@ export class UsersTableComponent implements OnInit {
   }
 
   refreshData(){
-    console.log('calling refresh', event)
+    console.log('calling refresh')
     this.usersDb.getUsers().subscribe(data=>{
+      console.log(data)
       this.usersData = data;
     })
+  }
+
+  refreshDatasave = ()=>{
+    console.log('calling refresh')
+    setTimeout(() =>{
+        this.usersDb.getUsers().subscribe(data=>{
+          console.log(data)
+          this.usersData = data;
+        })
+     }, 1000);
   }
 
   editUser(event: any){
